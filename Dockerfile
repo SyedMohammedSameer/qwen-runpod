@@ -16,4 +16,4 @@ RUN python -m venv myenv && \
     pip install --no-cache-dir torchvision
 
 
-CMD ["python", "main.py"]
+CMD ["/bin/sh", "-c", ". myenv/bin/activate && python main.py"]
